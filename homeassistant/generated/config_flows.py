@@ -168,6 +168,7 @@ FLOWS = {
         "flo",
         "flume",
         "flux_led",
+        "folder_watcher",
         "forecast_solar",
         "forked_daapd",
         "foscam",
