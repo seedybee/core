@@ -11,7 +11,6 @@ from homeassistant.components import nws
 from homeassistant.components.weather import (
     ATTR_CONDITION_CLEAR_NIGHT,
     ATTR_CONDITION_SUNNY,
-    ATTR_FORECAST,
     DOMAIN as WEATHER_DOMAIN,
     LEGACY_SERVICE_GET_FORECAST,
     SERVICE_GET_FORECASTS,
@@ -36,6 +35,8 @@ from .const import (
 
 from tests.common import MockConfigEntry, async_fire_time_changed
 from tests.typing import WebSocketGenerator
+
+ATTR_FORECAST = "forecast"
 
 
 @pytest.mark.parametrize(
