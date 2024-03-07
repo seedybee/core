@@ -12,12 +12,14 @@ ENV \
 
 ARG QEMU_CPU
 
+RUN curl -LsSf https://astral.sh/uv/install.sh | sh
+ENV PATH="$PATH:/root/.cargo/bin"
+
 WORKDIR /usr/src
 
 ## Setup Home Assistant Core dependencies
 COPY requirements.txt homeassistant/
 COPY homeassistant/package_constraints.txt homeassistant/homeassistant/
-RUN pip3 install uv
 RUN \
     uv pip install \
         --system \
