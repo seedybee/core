@@ -1,6 +1,6 @@
 image: ghcr.io/home-assistant/{arch}-homeassistant
 build_from:
-  armv7: ghcr.io/home-assistant/armv7-homeassistant-base:2024.02.1
+  armhf: ghcr.io/home-assistant/armhf-homeassistant-base:2024.02.1
 codenotary:
   signer: notary@home-assistant.io
   base_image: notary@home-assistant.io
