@@ -30,7 +30,7 @@ WORKDIR /usr/src
 COPY requirements.txt homeassistant/
 COPY homeassistant/package_constraints.txt homeassistant/homeassistant/
 RUN \
-    uv pip install \
+    uv pip install -v \
         --no-build \
         -r homeassistant/requirements.txt
 
